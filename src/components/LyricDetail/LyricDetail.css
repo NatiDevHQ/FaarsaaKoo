@@ -1,0 +1,115 @@
+.lyric-detail {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.dark .lyric-detail {
+  background-color: #1f2937;
+}
+
+.lyric-detail-image-container {
+  position: relative;
+  width: 100%;
+  height: 16rem;
+}
+
+.lyric-detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lyric-detail-back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lyric-detail-back-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lyric-detail-content {
+  padding: 1.5rem;
+}
+
+.lyric-detail-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.dark .lyric-detail-title {
+  color: white;
+}
+
+.lyric-detail-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.dark .lyric-detail-subtitle {
+  color: #d1d5db;
+}
+
+.lyric-detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lyric-detail-meta-item {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+}
+
+.dark .lyric-detail-meta-item {
+  color: #d1d5db;
+}
+
+.lyric-detail-meta-icon {
+  margin-right: 0.5rem;
+}
+
+.lyric-container {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dark .lyric-container {
+  background-color: #374151;
+}
+
+.lyric-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.dark .lyric-title {
+  color: #e5e7eb;
+}
+
+.lyric-text {
+  color: #4b5563;
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+.dark .lyric-text {
+  color: #e5e7eb;
+}

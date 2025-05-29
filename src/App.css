@@ -1,0 +1,79 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.dark .app-container {
+  background-color: #111827;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.app-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.dark .app-title {
+  color: white;
+}
+
+.theme-toggle {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: #e5e7eb;
+  color: #111827;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .theme-toggle {
+  background-color: #374151;
+  color: #f59e0b;
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .songs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .songs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.no-results {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.no-results-text {
+  color: #4b5563;
+  font-size: 1.25rem;
+}
+
+.dark .no-results-text {
+  color: #d1d5db;
+}

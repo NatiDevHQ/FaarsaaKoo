@@ -1,0 +1,318 @@
+/* styles.css */
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3a0ca3;
+    --text-color: #333;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+    --dark-gray: #757575;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .app-header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .app-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .search-bar {
+    position: relative;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--dark-gray);
+  }
+  
+  .lyrics-list {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+  }
+  
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--medium-gray);
+  }
+  
+  .list-header h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+  }
+  
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .lyric-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--white);
+    border: 1px solid var(--medium-gray);
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .lyric-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+  }
+  
+  .album-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .lyric-info {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .lyric-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .artist {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .meta-tags {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .meta-tags span {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--light-gray);
+    border-radius: 12px;
+    color: var(--dark-gray);
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .empty-state svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--dark-gray);
+    margin-bottom: 1rem;
+  }
+  
+  .empty-state h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+  }
+  
+  .empty-state p {
+    color: var(--dark-gray);
+  }
+  
+  .lyric-detail {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .detail-header {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .detail-cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-info {
+    flex: 1;
+  }
+  
+  .header-info h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-info h2 {
+    font-size: 1.3rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+  }
+  
+  .header-info p {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+  }
+  
+  .lyrics-container {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .lyrics-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .lyrics-container pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+    line-height: 1.8;
+  }
+  
+  .app-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-top: 1px solid var(--medium-gray);
+    color: var(--dark-gray);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .detail-header {
+      flex-direction: column;
+    }
+    
+    .detail-cover {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+      margin: 0 auto 1.5rem;
+    }
+    
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app-header h1 {
+      font-size: 2rem;
+    }
+    
+    .lyric-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .album-cover {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    
+    .meta-tags {
+      justify-content: center;
+    }
+  }
