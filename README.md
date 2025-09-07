@@ -1,4 +1,4 @@
-in development 
+In development....
 
 ````markdown
 # 🎵 Lyrics Finder App
