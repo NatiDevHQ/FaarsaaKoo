@@ -1,7 +1,7 @@
 In development....
 
 ````markdown
-# 🎵 Lyrics Finder App
+# 🎵 Lyrics App
 
 A sleek, modern React app that lets you **browse, search, and explore song lyrics** effortlessly — all in a beautifully responsive interface with dark/light mode and smooth animations.
 
